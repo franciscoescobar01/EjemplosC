@@ -21,7 +21,7 @@ int main() {
     printf("El primer numero es mayor que el segundo\n");
   }
   //fin estructura if
-  
+
   printf("Ingresa a un numero\n");
   scanf("%d",&n3);
 
@@ -29,7 +29,7 @@ int main() {
 
   //inicio estructura if
   if(n3>mayor){
-    mayor=n2;
+    mayor=n3;
     printf("El tercer numero es mayor\n");
   }
   //fin estructura if
