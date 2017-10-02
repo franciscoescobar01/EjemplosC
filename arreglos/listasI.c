@@ -19,9 +19,20 @@ int main() {
       printf("%d\n",temperatura[i]);
   }
 
-  // calcular promedio del arreglo
-  for (int i=0;i<30;i++) {
-    promedio = promedio + temperatura[i];
+  // calcular promedio del arreglo con el reajuste mensual
+  // recorrer el arreglo de meses
+  for (int i=0;i<12;i++) {
+    // recorrer el arreglo de dias
+    for (int j=0;j<30;j++) {
+      promedio = promedio + temperatura[j];
+      promedio = promedio *iTemperatura[i];
+    }
+    printf("%d\n", );
+  }
+
+  for (int i=0;i<12;i++) {
+
+
   }
 
   promedio = promedio/30;
