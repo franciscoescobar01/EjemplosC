@@ -7,6 +7,7 @@ int main() {
   float promedio=0;
   time_t t;
 
+  //semilla aleatoria para modificar los valores entregados por rand()
   srand((unsigned) time(&t));
 
   // llenar arreglo

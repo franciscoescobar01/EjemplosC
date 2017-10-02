@@ -6,17 +6,31 @@
 #include <string.h>
 
 int main() {
-  // declaración de arreglo de largo definido
-  int temperatura[30];
 
-  // declaración de arreglo con largo y contenido;
-  double iTemperatura[12] = {1.3, 1.2, 1.1, 1, 0.9, 0.8, 0.9, 1, 1.1, 1.2, 1.3, 1.4};
+  int temperatura[30];
   float promedio=0;
+  time_t t;
+  // declaración de arreglo con contenido definido
+  char meses[12][14] = {
+                        "enero",
+                        "febrero",
+                        "marzo",
+                        "abril",
+                        "mayo",
+                        "junio",
+                        "julio",
+                        "agosto",
+                        "septiembre",
+                        "octubre",
+                        "noviembre",
+                        "diciembre"
+                      };
+
+  srand((unsigned) time(&t));
 
   // llenar arreglo
   for(int i=0;i<30;i++){
       temperatura[i]=rand()%20+10;
-      printf("%d\n",temperatura[i]);
   }
 
   // calcular promedio del arreglo
