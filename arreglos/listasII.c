@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-#define cartones 1000
+#define cartones 50
 
 void generaCarton(short int arreglo[]);
 void mostarCarton(short int arreglo[]);
