@@ -11,7 +11,7 @@ int main() {
   float promedio=0;
   time_t t;
   // declaración de arreglo con contenido definido
-  char meses[12][14] = {
+  char meses[12][] = {
                         "enero",
                         "febrero",
                         "marzo",
