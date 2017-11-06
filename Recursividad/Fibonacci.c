@@ -5,7 +5,7 @@ int fibboRec(int n);
 void fibboIt(int n);
 
 int main() {
-  int n, contador;
+  int n, contador,i=0;
   printf("Ingresa el numero de terminos a generar\n");
   scanf("%d",&n);
 
@@ -14,7 +14,7 @@ int main() {
   printf("\n");
 
   printf("Generación de serie de forma recursiva\n");
-  for (int i = 0; i < n; i++) {
+  for (i = 0; i < n; i++) {
     printf("%d\n", fibboRec(i));
   }
   printf("Adios\n");
@@ -31,8 +31,8 @@ int fibboRec(int n){
 
 void fibboIt(int n){
   int fib1 = 0, fib2 = 1, fib3 = 0;
-
-  for (int i = 0; i < n; i++) {
+  int i;
+  for (i = 0; i < n; i++) {
     printf(" %d \n", fib3);
 
     fib1 = fib2;
