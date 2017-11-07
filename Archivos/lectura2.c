@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+#include <string.h>
 int main(){
     char c[100];
     FILE *fptr;
@@ -10,7 +10,7 @@ int main(){
         exit(1);
     }
 
-    fscanf(fptr,"%[^\n]",c);
+    fscanf(fptr,"%s",&c[0]);
 
     printf("la informacion es:\n%s",c);
     fclose(fptr);
